@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
+
 public class GraphicsController {
 
 
@@ -27,10 +28,12 @@ public class GraphicsController {
         return Double.parseDouble(height.getText());
     }
 
-    Rectangular rectangle = new Rectangular(1.2,1.0, getHeight(), getWidth());
+    private Rectangular rectangle;
 
     public void onComputeClick() {
+        rectangle = new Rectangular(1.2,1.0, getHeight(), getWidth());
         area.setText(String.valueOf(rectangle.computeArea()));
         circumference.setText(String.valueOf(rectangle.computeCircumference()));
+
     }
 }

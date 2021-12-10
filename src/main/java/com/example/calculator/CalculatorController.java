@@ -10,7 +10,6 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
