@@ -17,6 +17,21 @@ public class CalculatorTest {
 
     @Test
     public void testAdd() {
-        assertEquals (c.add(0.0,0.0), 0.0, 0.01);
+        assertEquals (c.add(3.4,2.3), 5.7, 0.01);
     }
+
+    @Test
+    public void testSubtract() {
+        assertEquals (c.subtract(3.4,2.3), 1.1, 0.01);
+    }
+
+    @Test
+    public void testMultiply() {
+        assertEquals (c.multiply(4.0,4.0), 16, 0.01);
+    }
+    @Test
+    public void testDivide() {
+        assertEquals (c.divide(16,4), 4, 0.01);
+    }
+
 }
